@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <h1 class="title">Job Application Form</h1>
+  </div>
+
+  <form action="post">
+    <div class="row" data-equalizer>
+      <div class="large-6 medium-6 small-12 columns panel" data-equalizer-watch>
+        <fieldset>
+          <legend>The Basics</legend>
+          <label>First Name
+            <input type="text" placeholder="First">
+          </label>
+          <label>Last Name
+            <input type="text" placeholder="Last">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>How May We Contact You</legend>
+          <label>Email
+            <input type="email" placeholder="myname@mycompany.com">
+          </label>
+          <label>Phone Number
+            <input type="text" placeholder="111-222-3344">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Why Did You Contact Us</legend>
+          <label>I am applying for:
+            <select class="form-control">
+              <option>Pastry Chef</option>
+              <option>Mario Kart Racer</option>
+              <option>Strongman/woman Champion</option>
+              <option>Rocket Scientist</option>
+              <option>Barrel Hopper</option>
+              <option>Flaming Torch Juggler</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Show Us What You've Got</legend>
+          <label>My resume
+            <input type="file" name="resumeFile" id="resumeFile">
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="large-6 medium-6 small-12 columns panel" data-equalizer-watch>
+        <fieldset>
+          <legend>So Tell Us More About Yourself</legend>
+          <label>Why do you want to work for us?
+            <textarea class="w100" rows="10" placeholder="Please provide a brief description of why you are interested in our company."></textarea>
+          </label>
+
+          <label>What makes you the best applicant for this position?
+            <textarea class="w100" rows="10" placeholder="Tell us how you are planning to make the world a better place!"></textarea>
+          </label>
+
+          <label>Anything else you would like to share
+            <textarea class="w100" rows="10" placeholder="Optional - any information you would like us to know that hasn't already been covered"></textarea>
+          </label>
+        </fieldset>
+      </div>
+    </div>
+    <div class="row text-center">
+      <input type="button" class="button secondary middle" value="Yes! Bring me to your Leader! I want to join your Team!">
+    </div>
+  </form>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/fastclick.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
